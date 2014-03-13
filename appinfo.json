@@ -1,1 +1,10 @@
-<script src="http://feeds.financialcontent.com/account_name/JSQuote?Ticker=MSFT"></script>
+ <script>
+  function updateQuotes(data) {
+   for (ticker in quote) {
+    var symbol = quote[ticker];
+    document.write('<div>Price of ' + ticker + ' is ' + symbol['Last'] + '</div>');
+   }
+  }
+ </script>
+ 
+ <script src="http://feeds.financialcontent.com/*****/JSQuote?Ticker=YHOO+AAPL+MSFT"></script>
