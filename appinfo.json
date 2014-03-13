@@ -1,13 +1,1 @@
- <script>
- var getCurrencyPair = function() {
-
-  var url = 'http://rate-exchange.appspot.com/currency?from=usd&to=jpy'
-
-  $.getJSON( url, function( data ) {
-   console.log(data);
-  });
-
-};
- </script>
- 
- 
+{"0":"Google","1":"MAC","2":"REliance","3":"DAX","4":"Nikkei","5":"S&P500"}
