@@ -1,8 +1,9 @@
-var getWeather = function() {
-    var lhs1 = "usd";
-    var rhs1 = "jpy";
-    var url1 = "http//rate-exchange.appspot.com/currency?from=" + lhs1 + "&to=" + rhs1
-    console.log(url1);
-    var response1 = HTTPGET(url1);
-    var json1 = JSON.parse(response1);
-}
+var getCurrencyPair = function() {
+
+  var url = 'http://rate-exchange.appspot.com/currency?from=usd&to=jpy'
+
+  $.getJSON( url, function( data ) {
+   console.log(data);
+  });
+
+};
