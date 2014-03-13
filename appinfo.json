@@ -1,10 +1,13 @@
  <script>
-  function updateQuotes(data) {
-   for (ticker in quote) {
-    var symbol = quote[ticker];
-    document.write('<div>Price of ' + ticker + ' is ' + symbol['Last'] + '</div>');
-   }
-  }
+ var getCurrencyPair = function() {
+
+  var url = 'http://rate-exchange.appspot.com/currency?from=usd&to=jpy'
+
+  $.getJSON( url, function( data ) {
+   console.log(data);
+  });
+
+};
  </script>
  
- <script src="http://feeds.financialcontent.com/*****/JSQuote?Ticker=YHOO+AAPL+MSFT"></script>
+ 
