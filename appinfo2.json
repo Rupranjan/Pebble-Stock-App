@@ -1,9 +1,3 @@
-function HTTPGET(url) {
-    var req = new XMLHttpRequest();
-    req.open("GET", url, false);
-    req.send();
-    return req.responseText;
-}
 var getWeather = function() {
     var lhs1 = "usd";
     var rhs1 = "jpy";
@@ -11,3 +5,4 @@ var getWeather = function() {
     console.log(url1);
     var response1 = HTTPGET(url1);
     var json1 = JSON.parse(response1);
+}
