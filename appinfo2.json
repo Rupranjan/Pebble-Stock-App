@@ -1,1 +1,13 @@
-{"0":"1210","1":"15464","2":"3600","3":"8212","4":"14506","5":"1764"}
+ var req = new XMLHttpRequest();
+  req.open('GET', 'http://api.openweathermap.org/data/2.1/find/city?lat=37.830310&lon=-122.270831&cnt=1', true);
+  req.onload = function(e) {
+    if (req.readyState == 4 && req.status == 200) {
+      if(req.status == 200) {
+        var response = JSON.parse(req.responseText);
+        var temperature = result.list[0].main.temp;
+        var icon = result.list[0].main.icon;
+        Pebble.sendAppMessage({ "icon":icon, "temperature":temperature + "\u00B0C"});
+      } else { console.log("Error"); }
+    }
+  }
+  req.send(null);
