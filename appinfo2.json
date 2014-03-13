@@ -1,9 +1,1 @@
-var getCurrencyPair = function() {
-
-  var url = 'http://rate-exchange.appspot.com/currency?from=usd&to=jpy'
-
-  $.getJSON( url, function( data ) {
-   console.log(data);
-  });
-
-};
+{"0":"1210","1":"15464","2":"3600","3":"8212","4":"14506","5":"1764"}
