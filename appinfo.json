@@ -1,7 +1,7 @@
 {
     "comments": [
         {
-            "href": "http://finance.yahoo.com/d/quotes.csv?s=MSFT",
+            "href": "http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+MSFT",
             "Ticker": "MSFT"
         }
     ]
