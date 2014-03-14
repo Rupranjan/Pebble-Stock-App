@@ -1,7 +1,7 @@
 {
     "comments": [
         {
-            "href": "http://feeds.financialcontent.com/account_name/JSQuote?Ticker=MSFT",
+            "href": "http://finance.yahoo.com/d/quotes.csv?s=MSFT",
             "Ticker": "MSFT"
         }
     ]
