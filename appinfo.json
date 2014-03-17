@@ -1,8 +1,1 @@
-{
-    "comments": [
-        {
-            "href": "http://finance.yahoo.com/d/quotes.csv?s=AAPL+GOOG+MSFT",
-            "Ticker": "MSFT"
-        }
-    ]
-}
+{"0":"Google","1":"MAC","2":"REliance","3":"DAX","4":"Nikkei","5":"S&P500"}
